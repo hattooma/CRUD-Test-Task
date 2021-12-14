@@ -1,0 +1,21 @@
+<form [formGroup]="addform">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>First name</mat-label>
+      <input matInput placeholder="Add first name" formControlName="firstName">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Last name</mat-label>
+      <input matInput placeholder="Add last name" formControlName="lastName">
+    </mat-form-field>
+    <br>
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Add email" formControlName="email">
+    </mat-form-field>
+    <br>
+      
+     <button type="submit" (click)="add()" class="btn btn-outline-primary" id="retrievePerson" mat-dialog-close>Submit</button>
+  
+  
+  </form>

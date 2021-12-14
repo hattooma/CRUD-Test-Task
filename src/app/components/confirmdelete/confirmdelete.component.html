@@ -1,0 +1,20 @@
+
+
+
+<h2>
+    Are you sure that you want to delete?
+</h2>
+<h4>
+   First name: {{data.person.firstName}} 
+</h4>
+<h4>
+    Last name: {{data.person.lastName}}
+</h4>
+
+<button type="submit" (click)="confirm()" mat-ripple mat-stroked-button color="warn" class="delete" mat-dialog-close>
+    DELETE
+</button>
+
+<button  mat-ripple mat-stroked-button color="primary" mat-dialog-close>
+    CANCEL
+</button>

@@ -1,0 +1,28 @@
+<p>Edit {{data.person.firstName}}</p>
+
+<form [formGroup]="editform">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>ID</mat-label>
+        <input matInput formControlName="ID">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>First name</mat-label>
+        <input matInput placeholder="Edit first name" formControlName="firstName">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Last name</mat-label>
+        <input matInput placeholder="Edit last name" formControlName="lastName">
+      </mat-form-field>
+      <br>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Edit email" formControlName="email">
+      </mat-form-field>
+      <br>
+   
+      <button type="submit" (click)="edit()" class="btn btn-outline-primary" id="retrievePerson" mat-dialog-close>Submit</button>
+
+
+</form>

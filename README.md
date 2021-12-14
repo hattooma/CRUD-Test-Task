@@ -1,27 +1,30 @@
-# CRUDTestTask
+# CRUD-Test-Task
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` in the project folder to install all dependencies.
 
-## Code scaffolding
+Run `npm install -g json-server` to install JSON Server globally.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng add @angular/material` to install Angular Material.
 
-## Build
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `json-server --watch db.json`  to start JSON Server under the project folder.
 
-## Running unit tests
+## App description
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Most elements used in this application is Angular Material (Button - Dialog - Input).
 
-## Running end-to-end tests
+You can create a new person, and is added to a fake editable database (json-server).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+All Persons are displayed in an HTML based table, each line contains three buttons as well:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Show Info: To display information concerning the person (ID, first name, last name, email address).
+
+Edit: To edit one or more than one input fields  (ID is not set to be edited).
+
+Delete: To delete a person from the database.

@@ -1,0 +1,30 @@
+
+<button mat-raised-button color="primary" (click)="createPerson()">Create Person</button>
+
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th class="align-middle" scope="col">ID</th>
+        <th class="align-middle" scope="col">First Name</th>
+        <th class="align-middle" scope="col">Last Name</th>
+        <th class="align-middle" scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let person of persons">
+        <th class="align-middle" scope="row">{{person.id}}</th>
+        <td class="align-middle">{{person.firstName}}</td>
+        <td class="align-middle">{{person.lastName}}</td>
+        <td><button mat-ripple mat-stroked-button color="primary" class="button-in-table" (click)="openDialog(person.id)" [value]="person.id">Show info</button>
+        <button mat-ripple mat-stroked-button  color="accent" class="button-in-table" (click)="editperson(person.id)" [value]="person.id">Edit</button>
+        <button mat-ripple mat-stroked-button  color="warn" class="button-in-table"(click)="deleteperson(person.id)" [value]="person.id">Delete</button></td>
+      </tr>
+    </tbody>
+</table>
+
+
+
+
+
+     
